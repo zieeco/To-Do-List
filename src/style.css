@@ -66,8 +66,6 @@ button:hover {
 }
 
 .p-sm-i {
-  /* padding: 12px 19px 12px 17px; */
-  /* padding: 16px 0; */
   padding: 18px 19px 18px 17px;
 }
 
@@ -138,13 +136,24 @@ div.task-container ul li div {
   align-items: center;
 }
 
+.mr-12 {
+  margin-right: 12px;
+}
+
 .clear-all:hover {
   border-bottom: 1px solid #b8b8b8;
 }
 
 @media screen and (min-width: 768px) {
   .main-container {
-    max-width: 600px;
+    max-width: 500px;
+    margin: 0 auto 80px auto;
+  }
+}
+
+@media screen and (min-width: 992px) {
+  .main-container {
+    max-width: 450px;
     margin: 0 auto 80px auto;
   }
 }
