@@ -3,7 +3,7 @@
 A To-Do-List App helps users to get their task cordinated and organised.
 
 <p align="center">
-  <!-- <img src="./src/screenshot.png"> -->
+  <img src="./screenshot.png">
 </p>
 
 This  project is from microverse javascript curriculum which tests student's ability on using webpack in a real life project.
