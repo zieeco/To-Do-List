@@ -5,7 +5,7 @@ const taskList = document.querySelector('.task-list');
 const storedToDos = [
   {
     index: 0,
-    description: 'Awesome Book with ES6',
+    description: 'Awesome Books with ES6',
     completed: true,
   },
   {
