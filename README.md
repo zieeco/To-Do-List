@@ -15,6 +15,10 @@ This  project is from microverse javascript curriculum which tests student's abi
 - JAVASCRIPT
 - Webpack
 
+## Live Demo Link
+
+[Live Demo](https://zieeco.github.io/To-Do-List/dist/index.html)
+
 ## Getting Started
 
 To get a local copy up and running:
