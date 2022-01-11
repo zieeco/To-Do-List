@@ -1,0 +1,150 @@
+@import url('https://fonts.googleapis.com/css2?family=Open+Sans:ital,wght@0,300;1,300&display=swap');
+
+*,
+*::before,
+*::after {
+  box-sizing: border-box;
+  padding: 0;
+  margin: 0;
+}
+
+body {
+  font-family: 'Open Sans', sans-serif;
+  line-height: 24px;
+  font-style: normal;
+  font-weight: normal;
+}
+
+ul,
+li {
+  list-style: none;
+}
+
+button,
+input {
+  border: transparent;
+  outline: transparent;
+}
+
+.bg-white {
+  background: white;
+}
+
+button:hover {
+  cursor: pointer;
+}
+
+.flex {
+  display: flex;
+}
+
+.d-flex {
+  display: flex;
+  flex-direction: column;
+}
+
+.p-24 {
+  padding: 24px;
+}
+
+.fs {
+  font-family: 'Open Sans', sans-serif;
+  font-weight: 300;
+}
+
+.m-24 {
+  margin: 24px;
+}
+
+.p-sm-iii {
+  /* padding: 18px 19px 18px 17px; */
+  padding: 18px 0;
+}
+
+.p-sm-1 {
+  padding: 12px 19px 12px 17px;
+}
+
+.p-sm-i {
+  /* padding: 12px 19px 12px 17px; */
+  /* padding: 16px 0; */
+  padding: 18px 19px 18px 17px;
+}
+
+.p-sm {
+  padding: 8px;
+}
+
+.b-b {
+  border-bottom: 1px solid #b8b8b8;
+}
+
+.main-header {
+  opacity: 0.4;
+  margin: 20px 0;
+  text-align: center;
+}
+
+.main-container {
+  box-shadow: 0 2px 8px 0 rgb(0 0 0 / 60%);
+}
+
+.resize {
+  font-size: 15px;
+  color: #b8b8b8;
+  margin: auto 0;
+}
+
+div.input-container .todo-header,
+div.input-container .input-content {
+  justify-content: space-between;
+  align-items: center;
+}
+
+div.input-container .todo-header h2 {
+  font-size: 16px;
+  line-height: 20px;
+}
+
+[placeholder="Add to your list..."] {
+  font-style: italic;
+  font-family: 'Open Sans', sans-serif;
+  font-size: 16px;
+}
+
+div.task-container ul li {
+  justify-content: space-between;
+  align-items: center;
+}
+
+.d-flex-3 {
+  display: flex;
+  align-items: center;
+  flex-direction: column;
+}
+
+div.task-container .btn-container {
+  background: #f6f6f6;
+  padding: 25px;
+}
+
+div.task-container .btn-container button {
+  opacity: 0.8;
+  font-size: 20px;
+  background: #f6f6f6;
+}
+
+div.task-container ul li div {
+  align-items: center;
+}
+
+.clear-all:hover {
+  border-bottom: 1px solid #b8b8b8;
+}
+
+@media screen and (min-width: 768px) {
+  .main-container {
+    max-width: 600px;
+    margin: 0 auto 80px auto;
+  }
+}
