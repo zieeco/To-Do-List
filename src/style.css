@@ -144,6 +144,10 @@ div.task-container ul li div {
   border-bottom: 1px solid #b8b8b8;
 }
 
+.line-through {
+  text-decoration: line-through;
+}
+
 @media screen and (min-width: 768px) {
   .main-container {
     max-width: 500px;
