@@ -27,8 +27,8 @@ const getToDos = () => {
     </div>
 
     <div class="">
-    <i class="fas fa-trash delete" id=${index}></i>
-    <i class="fas fa-edit edit " id=${index}></i>
+    <i class="fas fa-trash delete resize" id=${index}></i>
+    <i class="fas fa-edit edit resize" id=${index}></i>
     </div>
     </li>`;
   });
