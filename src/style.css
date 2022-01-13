@@ -146,24 +146,39 @@ div.task-container ul li div {
   margin-right: 12px;
 }
 
+.w-100 {
+  width: 100%;
+}
+
 .clear-all:hover {
   border-bottom: 1px solid #b8b8b8;
+}
+
+.wrapper {
+  margin-top: 80px;
 }
 
 .line-through {
   text-decoration: line-through;
 }
 
-@media screen and (min-width: 768px) {
+@media screen and (min-width: 600px) {
   .main-container {
     max-width: 500px;
-    margin: 0 auto 80px auto;
+    margin: 0 auto;
   }
 }
 
 @media screen and (min-width: 992px) {
   .main-container {
-    max-width: 450px;
-    margin: 0 auto 80px auto;
+    max-width: 700px;
+    margin: 0 auto;
+  }
+}
+
+@media screen and (min-width: 1200px) {
+  .main-container {
+    max-width: 500px;
+    margin: 0 auto;
   }
 }
