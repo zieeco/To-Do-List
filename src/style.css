@@ -34,6 +34,12 @@ button:hover {
   cursor: pointer;
 }
 
+input:hover,
+label:hover,
+i:hover {
+  cursor: pointer;
+}
+
 .flex {
   display: flex;
 }

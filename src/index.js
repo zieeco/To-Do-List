@@ -35,7 +35,7 @@ const getToDos = () => {
   taskList.innerHTML = display;
 };
 
-const saveToDos = ({ description, completed = false }) => {
+const saveToDos = ({ index, description, completed = false }) => {
   storedToDos = [];
   if (localStorage.getItem('toDos') === null) {
     storedToDos = [];
@@ -43,7 +43,7 @@ const saveToDos = ({ description, completed = false }) => {
     storedToDos = JSON.parse(localStorage.getItem('toDos'));
   }
 
-  storedToDos.push({ description, completed });
+  storedToDos.push({ index, description, completed });
   localStorage.setItem('toDos', JSON.stringify(storedToDos));
 };
 
@@ -65,6 +65,7 @@ const completedTask = (task) => {
     label.style.textDecoration = 'none';
   }
   localStorage.setItem('toDos', JSON.stringify(storedToDos));
+  getToDos();
 };
 
 const deleteTask = (task) => {
@@ -91,7 +92,7 @@ addToDoBtn.addEventListener('click', (e) => {
     saveEdittedTask(editIndex);
     editIndex = null;
   } else {
-    saveToDos({ description: todoInput.value, completed: false });
+    saveToDos({ index: storedToDos.length, description: todoInput.value, completed: false });
   }
 
   getToDos();
