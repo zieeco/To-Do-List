@@ -72,7 +72,7 @@ const deleteTask = (task) => {
   const item = storedToDos[task];
   storedToDos = storedToDos.filter((todo) => todo !== item);
   localStorage.setItem('toDos', JSON.stringify(storedToDos));
-  window.location.reload();
+  getToDos();
 };
 
 const editTask = (task) => {
