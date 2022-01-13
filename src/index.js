@@ -45,6 +45,7 @@ const saveToDos = ({ index, description, completed = false }) => {
 
   storedToDos.push({ index, description, completed });
   localStorage.setItem('toDos', JSON.stringify(storedToDos));
+  getToDos();
 };
 
 const saveEdittedTask = (task) => {
@@ -68,9 +69,12 @@ const completedTask = (task) => {
   getToDos();
 };
 
+const resetIndexes = (arr) => arr.forEach((item, idx) => { item.index = idx; });
+
 const deleteTask = (task) => {
   const item = storedToDos[task];
   storedToDos = storedToDos.filter((todo) => todo !== item);
+  resetIndexes(storedToDos);
   localStorage.setItem('toDos', JSON.stringify(storedToDos));
   getToDos();
 };
@@ -84,9 +88,7 @@ const editTask = (task) => {
 
 addToDoBtn.addEventListener('click', (e) => {
   e.preventDefault();
-  if (!todoInput.value) {
-    return;
-  }
+  if (!todoInput.value) return;
 
   if (editIndex != null) {
     saveEdittedTask(editIndex);
@@ -97,6 +99,12 @@ addToDoBtn.addEventListener('click', (e) => {
 
   getToDos();
   todoInput.value = '';
+});
+
+document.addEventListener('keydown', (e) => {
+  if (e.key === 'Enter' && todoInput.value) {
+    addToDoBtn.click();
+  }
 });
 
 document.addEventListener('DOMContentLoaded', getToDos);
