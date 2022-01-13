@@ -1,22 +1,28 @@
 /* eslint-disable import/no-cycle */
-import { completedTask, deleteTask, editTask } from './index.js';
+import {
+  completedTask, deleteTask, editTask, clearAllCompletedTask,
+} from './index.js';
 
 const statusUpdate = (e) => {
-  const item1 = e.target;
+  const item = e.target;
 
-  if (item1.classList.contains('checkbox')) {
-    const itemm = item1.closest('li');
+  if (item.classList.contains('checkbox')) {
+    const itemm = item.closest('li');
     completedTask(itemm);
   }
 
-  if (item1.classList.contains('delete')) {
-    const itemm = item1.parentElement.parentElement.id;
+  if (item.classList.contains('delete')) {
+    const itemm = item.parentElement.parentElement.id;
     deleteTask(itemm);
   }
 
-  if (item1.classList.contains('edit')) {
-    const itemm = item1.parentElement.parentElement.id;
+  if (item.classList.contains('edit')) {
+    const itemm = item.parentElement.parentElement.id;
     editTask(itemm);
+  }
+
+  if (item.classList.contains('clear-all')) {
+    clearAllCompletedTask();
   }
 };
 
