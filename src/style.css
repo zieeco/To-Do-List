@@ -34,6 +34,12 @@ button:hover {
   cursor: pointer;
 }
 
+input:hover,
+label:hover,
+i:hover {
+  cursor: pointer;
+}
+
 .flex {
   display: flex;
 }
@@ -142,6 +148,10 @@ div.task-container ul li div {
 
 .clear-all:hover {
   border-bottom: 1px solid #b8b8b8;
+}
+
+.line-through {
+  text-decoration: line-through;
 }
 
 @media screen and (min-width: 768px) {
