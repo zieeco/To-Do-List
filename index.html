@@ -1,0 +1,40 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <link href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.13.0/css/all.min.css" rel="stylesheet">
+  <meta http-equiv="X-UA-Compatible" content="IE=edge">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>ToDo List App</title>
+<script defer src="main.bundle.js"></script></head>
+<body>
+  <main>
+    <section class="wrapper">
+      <h1 class="main-header">- ToDo List App -</h1>
+      <div class="main-container d-flex-2 m-24">
+        <div class="input-container d-flex-2 p-sm-iii">
+          <div class="todo-header flex p-sm-i b-b">
+            <h2>Today's To Do</h2>
+            <i class="fas fa-sync resize"></i>
+          </div>
+
+          <div class="input-content flex p-sm-i b-b">
+            <input type="text" id="todo-input" class="w-100" placeholder="Add to your list...">
+            <button type="submit" id="add-todo-btn" class="bg-white">
+                <i class="fas fa-plus resize"></i>
+            </button>
+          </div>
+
+        </div>
+
+        <div class="task-container">
+          <ul class="task-list"></ul>
+          <div class="btn-container d-flex-3">
+            <button type="button" class="clear-all fs" id="clear-all-btn">Clear all completed</button>
+          </div>
+        </div>
+      </div>
+    </section>
+  </main>
+</body>
+</html>
