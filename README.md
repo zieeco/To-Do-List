@@ -17,7 +17,7 @@ This  project is from microverse javascript curriculum which tests student's abi
 
 ## Live Demo Link
 
-[Live Demo](https://zieeco.github.io/To-Do-List/dist/index.html)
+[Live Demo](https://zieeco.github.io/To-Do-List/)
 
 ## Getting Started
 

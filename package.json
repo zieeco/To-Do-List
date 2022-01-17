@@ -4,6 +4,8 @@
   "description": "",
   "private": true,
   "scripts": {
+    "predeploy": "npm run build",
+    "deploy": "gh-pages -d dist",
     "test": "echo \"Error: no test specified\" && exit 1",
     "start": "webpack serve --open",
     "build": "webpack"
@@ -18,13 +20,14 @@
   "bugs": {
     "url": "https://github.com/zieeco/To-Do-List/issues"
   },
-  "homepage": "https://github.com/zieeco/To-Do-List#readme",
+  "hompage": "http//zieeco.github.io/To-Do-List",
   "devDependencies": {
     "babel-eslint": "^10.1.0",
     "css-loader": "^6.5.1",
     "eslint": "^7.32.0",
     "eslint-config-airbnb-base": "^14.2.1",
     "eslint-plugin-import": "^2.25.4",
+    "gh-pages": "^3.2.3",
     "hint": "^6.1.9",
     "html-webpack-plugin": "^5.5.0",
     "style-loader": "^3.3.1",
